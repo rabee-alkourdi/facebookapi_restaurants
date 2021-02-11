@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Frame" id="fetchGUI">
+    <property name="background">#000000</property>
+    <property name="height">600</property>
+    <property name="padx">10</property>
+    <property name="pady">10</property>
+    <property name="width">400</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+      <rows>
+        <row id="0">
+          <property name="weight">1</property>
+        </row>
+        <row id="1">
+          <property name="weight">1</property>
+        </row>
+        <row id="2">
+          <property name="weight">1</property>
+        </row>
+        <row id="3">
+          <property name="weight">1</property>
+        </row>
+      </rows>
+      <columns>
+        <column id="0">
+          <property name="weight">1</property>
+        </column>
+      </columns>
+    </layout>
+    <child>
+      <object class="tk.LabelFrame" id="tokenFrm">
+        <property name="background">#000000</property>
+        <property name="font">{Times New Roman} 12 {bold}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="height">150</property>
+        <property name="padx">20</property>
+        <property name="text" translatable="yes">User Token</property>
+        <property name="width">500</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">False</property>
+          <property name="row">0</property>
+          <rows>
+            <row id="0">
+              <property name="weight">1</property>
+            </row>
+            <row id="1">
+              <property name="weight">1</property>
+            </row>
+          </rows>
+          <columns>
+            <column id="0">
+              <property name="weight">1</property>
+            </column>
+          </columns>
+        </layout>
+        <child>
+          <object class="tk.Text" id="tokenTxt">
+            <property name="background">#2a2a2a</property>
+            <property name="font">{Courier} 10 {}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="height">7</property>
+            <property name="insertbackground">#ffffff</property>
+            <property name="width">40</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="tokenLbl">
+            <property name="background">#000000</property>
+            <property name="font">{Times New Roman} 12 {}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">Enter User Token:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.LabelFrame" id="fieldsFrm">
+        <property name="background">#000000</property>
+        <property name="font">{Times New Roman} 12 {bold}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="height">200</property>
+        <property name="padx">20</property>
+        <property name="text" translatable="yes">Fields</property>
+        <property name="width">500</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">False</property>
+          <property name="row">1</property>
+          <rows>
+            <row id="0">
+              <property name="weight">1</property>
+            </row>
+            <row id="1">
+              <property name="weight">1</property>
+            </row>
+            <row id="2">
+              <property name="weight">1</property>
+            </row>
+            <row id="3">
+              <property name="weight">1</property>
+            </row>
+            <row id="4">
+              <property name="weight">1</property>
+            </row>
+            <row id="5">
+              <property name="weight">1</property>
+            </row>
+          </rows>
+          <columns>
+            <column id="0">
+              <property name="weight">1</property>
+            </column>
+            <column id="1">
+              <property name="minsize">0</property>
+              <property name="pad">0</property>
+              <property name="weight">1</property>
+            </column>
+            <column id="2">
+              <property name="weight">1</property>
+            </column>
+            <column id="3">
+              <property name="pad">0</property>
+              <property name="weight">1</property>
+            </column>
+            <column id="4">
+              <property name="weight">1</property>
+            </column>
+          </columns>
+        </layout>
+        <child>
+          <object class="tk.Listbox" id="sourceLst">
+            <property name="background">#2a2a2a</property>
+            <property name="foreground">#ffffff</property>
+            <property name="selectmode">multiple</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="rowspan">4</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Scrollbar" id="sourceScrlBr">
+            <property name="orient">vertical</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="ipady">56</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="rowspan">4</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="addFieldBtn">
+            <property name="background">#009700</property>
+            <property name="command">listAddBtnAction</property>
+            <property name="font">{Times New Roman} 10 {}</property>
+            <property name="text" translatable="yes">&gt;</property>
+            <property name="width">2</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">s</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="addAllFieldsBtn">
+            <property name="background">#009700</property>
+            <property name="command">listAddAllBtnAction</property>
+            <property name="font">{Times New Roman} 10 {}</property>
+            <property name="text" translatable="yes">&gt;&gt;</property>
+            <property name="width">2</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="removeFieldBtn">
+            <property name="background">#2b2bff</property>
+            <property name="command">listRemoveBtnAction</property>
+            <property name="font">{Times New Roman} 10 {}</property>
+            <property name="text" translatable="yes">&lt;</property>
+            <property name="width">2</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="removeAllFieldsBtn">
+            <property name="background">#2b2bff</property>
+            <property name="command">listRemoveAllBtnAction</property>
+            <property name="font">{Times New Roman} 10 {}</property>
+            <property name="text" translatable="yes">&lt;&lt;</property>
+            <property name="width">2</property>
+            <layout>
+              <property name="column">2</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+              <property name="sticky">n</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Listbox" id="destinationLst">
+            <property name="background">#2a2a2a</property>
+            <property name="foreground">#ffffff</property>
+            <property name="selectmode">multiple</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="propagate">False</property>
+              <property name="row">0</property>
+              <property name="rowspan">4</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Scrollbar" id="destinationScrlBr">
+            <property name="orient">vertical</property>
+            <layout>
+              <property name="column">4</property>
+              <property name="ipady">56</property>
+              <property name="propagate">False</property>
+              <property name="row">0</property>
+              <property name="rowspan">4</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="availableLbl">
+            <property name="background">#000000</property>
+            <property name="font">{Times New Roman} 11 {}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">Available</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="columnspan">2</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="selectedLbl">
+            <property name="background">#000000</property>
+            <property name="font">{Times New Roman} 11 {}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="text" translatable="yes">Selected</property>
+            <layout>
+              <property name="column">3</property>
+              <property name="columnspan">2</property>
+              <property name="propagate">True</property>
+              <property name="row">5</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.LabelFrame" id="queryFrm">
+        <property name="background">#000000</property>
+        <property name="font">{Times New Roman} 12 {bold}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="height">150</property>
+        <property name="padx">20</property>
+        <property name="text" translatable="yes">Search Query Terms</property>
+        <property name="width">500</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">False</property>
+          <property name="row">2</property>
+          <rows>
+            <row id="0">
+              <property name="weight">1</property>
+            </row>
+            <row id="1">
+              <property name="weight">1</property>
+            </row>
+          </rows>
+          <columns>
+            <column id="0">
+              <property name="weight">1</property>
+            </column>
+            <column id="1">
+              <property name="weight">1</property>
+            </column>
+          </columns>
+        </layout>
+        <child>
+          <object class="tk.Button" id="qtermsBtn">
+            <property name="background">#f8f8f8</property>
+            <property name="command">loadQueryTermsBtnAction</property>
+            <property name="font">{Times New Roman} 11 {}</property>
+            <property name="text" translatable="yes">Load from XML</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">w</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Text" id="qtermsTxt">
+            <property name="background">#2a2a2a</property>
+            <property name="font">{Courier} 10 {}</property>
+            <property name="foreground">#ffffff</property>
+            <property name="height">7</property>
+            <property name="insertbackground">#ffffff</property>
+            <property name="width">40</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="sticky">e</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="fetchDBtn">
+        <property name="background">#008000</property>
+        <property name="command">fetchDataBtnAction</property>
+        <property name="font">{Times New Roman} 12 {bold}</property>
+        <property name="text" translatable="yes">Fetch Data</property>
+        <property name="width">15</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="pady">10</property>
+          <property name="propagate">True</property>
+          <property name="row">3</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>

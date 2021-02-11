@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="tk.Frame" id="regressionFrm">
+    <property name="background">#000000</property>
+    <property name="height">170</property>
+    <property name="padx">20</property>
+    <property name="width">550</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">False</property>
+      <property name="row">0</property>
+      <rows>
+        <row id="0">
+          <property name="weight">1</property>
+        </row>
+        <row id="1">
+          <property name="weight">1</property>
+        </row>
+        <row id="2">
+          <property name="weight">1</property>
+        </row>
+        <row id="3">
+          <property name="weight">1</property>
+        </row>
+        <row id="4">
+          <property name="weight">1</property>
+        </row>
+      </rows>
+      <columns>
+        <column id="0">
+          <property name="weight">1</property>
+        </column>
+        <column id="1">
+          <property name="weight">1</property>
+        </column>
+        <column id="2">
+          <property name="weight">1</property>
+        </column>
+      </columns>
+    </layout>
+    <child>
+      <object class="tk.Label" id="chooseDVLbl">
+        <property name="background">#000000</property>
+        <property name="font">{Times New Roman} 12 {bold}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="height">3</property>
+        <property name="height">3</property>
+        <property name="text" translatable="yes">Choose Dependent variable:</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">sw</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Combobox" id="numsCmbBx">
+        <layout>
+          <property name="column">0</property>
+          <property name="padx">20</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+          <property name="sticky">w</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Label" id="chooseIVLbl">
+        <property name="background">#000000</property>
+        <property name="font">{Times New Roman} 12 {bold}</property>
+        <property name="foreground">#ffffff</property>
+        <property name="text" translatable="yes">Choose Independent variables:
+</property>
+        <layout>
+          <property name="column">1</property>
+          <property name="columnspan">2</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+          <property name="sticky">s</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Combobox" id="nums1CmbBx">
+        <layout>
+          <property name="column">1</property>
+          <property name="padx">5</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Combobox" id="nums2CmbBx">
+        <layout>
+          <property name="column">2</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Button" id="regressionOkBtn">
+        <property name="background">#f8f8f8</property>
+        <property name="command">regressionOkBtnAction</property>
+        <property name="font">{Times New Roman} 11 {bold}</property>
+        <property name="text" translatable="yes">OK</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="columnspan">3</property>
+          <property name="propagate">True</property>
+          <property name="row">3</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>

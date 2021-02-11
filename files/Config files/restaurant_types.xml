@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RestaurantTypes>
+    <RType>bakery café</RType>
+    <RType>doughnut shop</RType>
+    <RType>barbecue restaurant</RType>
+    <RType>biker bar</RType>
+    <RType>buffet restaurant</RType>
+    <RType>chili con carne restaurant</RType>
+    <RType>coffeehouse</RType>
+    <RType>diner</RType>
+    <RType>doughnut shop</RType>
+    <RType>drive-in restaurant</RType>
+    <RType>ethnic restaurant</RType>
+    <RType>chinese restaurant</RType>
+    <RType>cuban restaurant</RType>
+    <RType>czech restaurant</RType>
+    <RType>french restaurant</RType>
+    <RType>german restaurant</RType>
+    <RType>greek restaurant</RType>
+    <RType>haitian restaurant</RType>
+    <RType>hungarian restaurant</RType>
+    <RType>indian restaurant</RType>
+    <RType>indonesian restaurant</RType>
+    <RType>irish restaurant</RType>
+    <RType>italian restaurant</RType>
+    <RType>japanese restaurants</RType>
+    <RType>jewish delicatessen</RType>
+    <RType>korean restaurant</RType>
+    <RType>lebanese restaurant</RType>
+    <RType>arabic restaurant</RType>
+    <RType>mexican restaurant</RType>
+    <RType>new american restaurant</RType>
+    <RType>pakistani restaurant</RType>
+    <RType>polish restaurant</RType>
+    <RType>russian restaurant</RType>
+    <RType>scandinavian restaurant</RType>
+    <RType>scottish restaurant</RType>
+    <RType>soul food restaurant</RType>
+    <RType>spanish restaurant</RType>
+    <RType>thai restaurant</RType>
+    <RType>turkish restaurant</RType>
+    <RType>ukrainian restaurant</RType>
+    <RType>vietnamese restaurant</RType>
+    <RType>fast casual restaurant</RType>
+    <RType>fast-food restaurant</RType>
+    <RType>Pizzeria</RType>
+    <RType>hot dog restaurant</RType>
+    <RType>submarine sandwich restaurant</RType>
+    <RType>fish and chip restaurant</RType>
+    <RType>food hall</RType>
+    <RType>halal restaurant</RType>
+    <RType>hamburger restaurant</RType>
+    <RType>kosher restaurant</RType>
+    <RType>noodle restaurant</RType>
+    <RType>pancake house</RType>
+    <RType>poultry restaurant</RType>
+    <RType>seafood restaurant</RType>
+    <RType>steakhouse</RType>
+    <RType>theme restaurants</RType>
+    <RType>vegetarian restaurant</RType>
+    <RType>vegan restaurant</RType>
+</RestaurantTypes>
